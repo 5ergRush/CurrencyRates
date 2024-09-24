@@ -1,0 +1,32 @@
+.rates-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rates-table th, .rates-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.rates-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.rates-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.rates-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.rates-table td {
+  font-size: 14px;
+}
+
+.rates-table th {
+  font-size: 16px;
+}

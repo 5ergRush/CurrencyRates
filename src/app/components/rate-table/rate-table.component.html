@@ -1,0 +1,14 @@
+<table class="rates-table">
+  <tr>
+    <th>Symbol</th>
+    <th>Bid</th>
+    <th>Ask</th>
+    <th>Time</th>
+  </tr>
+  <tr *ngFor="let rate of rates$ | async">
+    <td>{{ rate.symbol }}</td>
+    <td>{{ rate.bid }}</td>
+    <td>{{ rate.ask }}</td>
+    <td>{{ rate.time | date: 'dd.MM.yyyy, HH:mm:ss' }}</td>
+  </tr>
+</table>
