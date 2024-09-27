@@ -21,4 +21,8 @@ export class RatesTableComponent implements OnInit {
   ngOnInit(): void {
     this.rates$ = this.ratesService.getRates();
   }
+
+  trackBySymbol(index: number, rate: Rate) {
+    return rate.symbol;
+  }
 }

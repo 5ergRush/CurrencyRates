@@ -5,7 +5,7 @@
     <th>Ask</th>
     <th>Time</th>
   </tr>
-  <tr *ngFor="let rate of rates$ | async">
+  <tr *ngFor="let rate of rates$ | async; trackBy: trackBySymbol">
     <td>{{ rate.symbol }}</td>
     <td>{{ rate.bid }}</td>
     <td>{{ rate.ask }}</td>
